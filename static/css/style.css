@@ -10,7 +10,7 @@
 
 body {
   color: black;
-  background-color: white;
+  background-color: #2b2b2b;
   margin: 0;
   padding: 0;
 }
@@ -28,15 +28,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
+  display: inline-block;
   margin-left: 5rem;
-  padding: 1rem;
+  height: 100%
+}
+
+textarea {
+	
 }
 
 .navbar {
   position: fixed;
+  z-index: 1;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-  overflow: scroll;
 }
 
 .navbar-nav {
@@ -160,7 +165,7 @@ main {
   }
 
   .navbar:hover {
-    width: 16rem;
+    width: 14.4rem;
   }
 
   .navbar:hover .link-text {

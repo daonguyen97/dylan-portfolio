@@ -96,3 +96,5 @@ ENV/
 
 *.sqlite3
 .vagrant
+
+deploy/nginx_dylan_portfolio.conf

@@ -25,7 +25,8 @@ TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = 'o@!v2c)p(yifp_!p_j)f(s(v7o+32d4sgizotmgtxoa!vrv@0w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(int(os.environ.get('DEBUG', 1)))
+#DEBUG = bool(int(os.environ.get('DEBUG', 1)))
+DEBUG = 1
 
 ALLOWED_HOSTS = [
     'ec2-52-60-148-100.ca-central-1.compute.amazonaws.com',

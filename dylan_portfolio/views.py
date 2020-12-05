@@ -7,9 +7,11 @@ from .models import NavbarItem
 NAV_BAR_ITEMS = NavbarItem.objects.filter(status = True)
 
 def index(request):
+    NAV_BAR_ITEMS = NavbarItem.objects.filter(status = True)
     page = Page.objects.get(title = 'index')
     return render(request, str(page), {'page':page, 'items':NAV_BAR_ITEMS})
 
 def projects(request):
+    NAV_BAR_ITEMS = NavbarItem.objects.filter(status = True)
     page = Page.objects.get(title = 'projects')
     return render(request, str(page), {'page':page, 'items':NAV_BAR_ITEMS})

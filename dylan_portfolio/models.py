@@ -18,6 +18,6 @@ class NavbarItem(models.Model):
 
     class Meta:
         ordering = ['id']
-        
+
     def __str__(self):
         return self.label

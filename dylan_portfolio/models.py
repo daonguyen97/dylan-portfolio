@@ -21,3 +21,11 @@ class NavbarItem(models.Model):
 
     def __str__(self):
         return self.label
+
+class File(models.Model):
+    name = models.CharField(max_length=100)
+    file = models.FileField(upload_to = 'static/shared/')
+    is_shared = models.BooleanField()
+
+    def __str__(self):
+        return self.name

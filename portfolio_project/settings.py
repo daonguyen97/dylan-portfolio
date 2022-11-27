@@ -29,11 +29,13 @@ DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 #DEBUG = 1
 
 ALLOWED_HOSTS = [
-    '137.186.226.139',
-    '192.168.1.84',
+    '34.209.106.109',
+    '192.168.1.77',
     '127.0.0.1',
     'dylannguyen.dev',
-    'www.dylannguyen.dev'
+    'www.dylannguyen.dev',
+    'daonguyen.dev',
+    'www.daonguyen.dev'
     ]
 
 # Application definition
@@ -129,5 +131,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #Location of static files
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+#Server location of static files
+#STATIC_ROOT = os.path.join(BASE_DIR,'static')

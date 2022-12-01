@@ -29,7 +29,7 @@ $PROJECT_BASE_PATH/env/bin/python manage.py migrate
 $PROJECT_BASE_PATH/env/bin/python manage.py collectstatic --noinput
 
 # Configure supervisor
-cp $PROJECT_BASE_PATH/deploy/supervisor_dylan_portfolio.conf /etc/supervisor/conf.d/dylan_portfolio.conf
+cp $PROJECT_BASE_PATH/deploy/supervisor_dylan_portfolio.conf /etc/supervisor/supervisord.conf
 supervisorctl reread
 supervisorctl update
 supervisorctl restart dylan_portfolio
